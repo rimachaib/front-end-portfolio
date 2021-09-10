@@ -1,0 +1,363 @@
+/*-----Flexbox Styles-----*/
+body {
+ display: block;
+ max-width: 824px;
+ align-content: center;
+}
+
+header.container {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+section.container {
+ justify-content: flex-start;
+ margin-bottom: 175px;
+}
+
+form {
+ display: flex;
+ /*places input in a column*/
+ flex-direction: column;
+}
+
+footer.container {
+ display: block;
+ justify-content: center;
+}
+
+/*-----Media Queries-----*/
+
+/*-----Screen width maximum 824px-----*/
+@media screen and (max-width: 824px) {
+ /*Apply margin of 40px on each side of the page's 
+ main sections when screen width is less than 824px */
+ section.container {
+  margin-right: 40px;
+  margin-left: 40px;
+ }
+
+ /*Hide horizontal rule when screen width is this less than 824px*/
+ .contact-introduction hr {
+  display: none;
+ }
+
+ /*position the half circle of language icons relative to the memoji images*/
+ .language-icons {
+  position: relative;
+  left: 4px;
+  top: 100px;
+  z-index: 0;
+ }
+
+ /*Align the animoji graphic correctly in relation to the language icons graphic*/
+ .about-graphic {
+  text-align: center;
+  top: 110px;
+  margin-top: -130px;
+  margin-bottom: 100px;
+ }
+}
+
+/*-----Screen width minimum 824px-----*/
+@media screen and (min-width: 824px) {
+ body {
+  align-content: center;
+  margin: 0 auto;
+ }
+
+ /*Align navigation container to the far right*/
+ header.container {
+  justify-content: flex-end;
+ }
+
+ /*Flexbox properties for introduction section*/
+ #introduction {
+  display: flex;
+  flex-direction: row-reverse;
+ }
+
+ .introduction {
+  margin-right: 79px;
+ }
+
+ /*Flexbox properties for project description and contact section*/
+ .project-cards,
+ #contact {
+  display: flex;
+ }
+
+ #project-1,
+ #project-2,
+ #project-3 {
+  max-width: 261px;
+ }
+
+ /*Adds margin between all project cards*/
+ #project-1,
+ #project-2 {
+  margin-right: 20px;
+ }
+
+ /*-----About graphic positioning-----*/
+
+ .language-icons {
+  position: relative;
+  left: 18px;
+  top: 10px;
+  z-index: 0;
+ }
+
+ .memoji-images {
+  margin-left: 42px;
+  margin-top: -95px;
+ }
+
+ /*Flexbox, element sizing, and element positioning properties for contact section*/
+ .contact-introduction {
+  align-self: flex-start;
+  flex-direction: column;
+  margin-right: 90px;
+ }
+
+ .contact-introduction p {
+  flex-wrap: wrap;
+  width: 332px;
+  margin-bottom: 35px;
+ }
+
+ .contact-introduction hr {
+  margin-top: 40px;
+ }
+
+ .contact-form {
+  margin: 133px 0px 0px 20px;
+ }
+
+ input,
+ textarea {
+  width: 402px;
+ }
+}
+
+/*-----Typography & Colors------*/
+nav a {
+ font-family: "Raleway", "Arial";
+ font-size: 20px;
+ font-weight: 700;
+ line-height: 19px;
+}
+
+h1,
+h2,
+h4,
+h5,
+label {
+ color: #0768b7;
+ font-family: "Raleway", "Arial";
+}
+
+label {
+ font-size: 14px;
+}
+
+h3,
+article {
+ color: #0a3453;
+ font-family: "Raleway", "Arial";
+}
+
+#proj-img-1,
+#proj-img-2,
+#proj-img-3 {
+ border: 0px;
+ box-shadow: 0px 5px 20px -5px rgba(176, 106, 0, 0.16);
+ border-radius: 8px;
+}
+
+h1 {
+ font-size: 38px;
+ font-weight: 900;
+}
+
+h2 {
+ font-size: 32px;
+ font-weight: 900;
+}
+
+p {
+ color: #0a3453;
+ font-family: "Raleway", "arial";
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 24px;
+}
+
+p.footer-content {
+ font-size: 12px;
+ line-height: 24px;
+}
+
+article.footer-content {
+ font-size: 14px;
+}
+
+/* Anchor tag styles */
+a {
+ text-decoration: none;
+ color: #eda831;
+}
+
+a:hover {
+ color: #de8601;
+}
+
+/* Horizontal rule */
+#horizontal-rule {
+ background: linear-gradient(#4bafff, #0768b7);
+ border: 0px;
+ box-shadow: 0px 10px 40px -10px rgba(48, 28, 20, 0.1);
+}
+
+/* Contact Form */
+form input,
+form textarea {
+ background: #ffffff;
+ border: 0px;
+ box-shadow: 0px 5px 20px -5px rgba(176, 106, 0, 0.16);
+ border-radius: 8px;
+}
+
+form input:focus,
+form textarea:focus {
+ outline: none;
+ border: 1px solid #de8601;
+}
+
+input[type="text"],
+textarea[type="text"] {
+ font-family: "Raleway", "arial";
+ color: #0768b7;
+}
+
+::placeholder {
+ font-family: "Raleway", "arial";
+ color: #de8601;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 24px;
+}
+
+button {
+ font-family: "lato";
+ background: linear-gradient(360deg, #f0a638 0%, #f5d668 100%);
+ color: white;
+ font-size: 18px;
+ box-shadow: 0px 10px 40px -10px rgba(48, 28, 20, 0.1);
+ border-radius: 8px;
+ border: 0px;
+}
+
+button:hover {
+ background: linear-gradient(360deg, #e48d09 0%, #f3bd4e 100%);
+}
+
+/*-----Element Sizing------*/
+body {
+ background: linear-gradient(90deg, #fffffd 0%, #fff7e1 100%);
+ height: 100%;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+nav {
+ margin-top: 30px;
+ margin-bottom: 134px;
+}
+
+nav a {
+ padding: 15px;
+}
+
+#view-paragraph {
+ margin-left: 10px;
+ margin-top: -5px;
+ display: inline;
+ color: #f2b243;
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 19px;
+}
+
+#download-text {
+ margin-left: 14px;
+ display: inline;
+ color: #f2b243;
+ font-weight: 900;
+ font-size: 16px;
+ line-height: 19px;
+}
+
+#project-1,
+#project-2 {
+ margin-bottom: 40px;
+}
+
+.contact-introduction {
+ margin: 30px 30px 30px 0px;
+}
+
+div.contact-introduction a {
+ margin-right: 30px;
+}
+
+h1,
+h2,
+h3 {
+ margin: 33px 0px;
+}
+
+p {
+ margin-bottom: 30px;
+}
+
+#horizontal-rule {
+ margin-top: 30px;
+ margin-left: 0px;
+ height: 6px;
+ width: 51px;
+}
+
+form input {
+ height: 40px;
+ padding: 8px 16px;
+ margin-top: 10px;
+ margin-bottom: 30px;
+}
+
+form textarea {
+ height: 60px;
+ padding: 8px 16px;
+ margin-top: 10px;
+ margin-bottom: 30px;
+}
+
+button {
+ width: 81px;
+ height: 50px;
+ padding: 14px 20px;
+}
+
+button[name="contact-button"] {
+ width: 104px;
+ height: 50px;
+}
+
+footer {
+ text-align: center;
+ margin: 33px 0px;
+}
+
+p.footer-content {
+ padding-bottom: 9px;
+}

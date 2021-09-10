@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rima Chaib Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@200;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="container">
+        <nav class="navigation">
+            <!--Each anchor tag links to a separate section of the page by the sections id name.-->
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!--The main container groups together all the main content of a web page.-->
+    <main>
+        <!-- Introduction Section -->
+        <!--The section container groups together certain content within a web page, and it should always have a heading-->
+        <section class="container" id="introduction">
+            <div class="about-graphic">
+                <article class="language-icons">
+                    <img src="./styles/images/icons/language.svg" alt="Programming language icons" width="295"
+                        height="170">
+                </article>
+                <article class="memoji-images">
+                    <img src="./styles/images/memoji/mask.png" width="240" height="240">
+                </article>
+            </div>
+            <div class="introduction">
+                <h3>Hi, I'm Rima Chaib</h3>
+                <h1>Front End Engineer</h1>
+                <p>I am a engineer, climber, problem solver, and former environmental scientist. I'm always seeking new
+                    opportunities to challenge myself, whether that's seeking new climbs in new places, or starting new
+                    projects
+                    to further my skill set and challenge my technical capabilities.</p>
+                <!--Contact button links to contact section-->
+                <a href="#contact">
+                    <button type="button" name="contact-button">Contact</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section class="container" id="about">
+            <h2>About</h2>
+            <p> I thrive when solving technical problems, helping clients, and
+                building relationships. In late 2020 I began studying software development
+                with the hopes of entering a new career path that would provide opportunities to think critically and
+                problem solve, not just once in a while but on a day to day basis. I quickly learned I had met my match.
+            </p>
+            <p>I've found a
+                home and a superpower in building tools with code and I'm looking forward to using my skills to help
+                companies
+                building products that are changing the way we all work and live. If you are interested in learning
+                more about my professional experience please download my resume using the link below. </p>
+            <a href="./resume/chaib-resume-2021.docx" download="chaib-resume-2021.docx"><img
+                    src="./styles/images/icons/download.svg" alt="Link icon to download" width="16" height="20">
+                <p id="download-text">Download Resume</p>
+            </a>
+            <hr id="horizontal-rule">
+        </section>
+
+        <!-- Projects Section-->
+        <section class="container" id="projects">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <!--------------------Project 1-------------------->
+                <article id="project-1">
+                    <img id="proj-img-1" src="./styles/images/project-screenshots/pomodoro-timer.png"
+                        alt="Pomodoro Timer Project screenshot" width="261" height="155">
+                    <h4>Pomodoro Timer </h4>
+                    <p>The Pomodoro Timer project was built in React as a time management tool to break work down into
+                        intervals,
+                        traditionally 25 minutes in length, separated by short breaks.</p>
+                    <a href="https://github.com/rimachaib/project-pomodoro-timer" target="_blank"><img
+                            src="./styles/images/icons/view.svg" alt="link to github" width="20" height="20">
+                        <p id="view-paragraph">View</p>
+                    </a>
+                </article>
+                <!--------------------Project 2-------------------->
+                <article id="project-2">
+                    <img id="proj-img-2" src="./styles/images/project-screenshots/decoder-ring.png"
+                        alt="Decoder Ring Project screenshot" width="261" height="155">
+                    <h4>Decoder Application </h4>
+                    <p>The Decoder Application encodes and decodes messages. For this project I was tasked with building
+                        the JavaScript
+                        algorithms that enable the application to work and writing the unit tests in Mocha and Chai to
+                        test each algorithm.
+                    </p>
+                    <a id="proj-img-3" href="https://github.com/rimachaib/project-decoder-ring" target="_blank"><img
+                            src="./styles/images/icons/view.svg" alt="link to github" width="20" height="20">
+                        <p id="view-paragraph">View</p>
+                    </a>
+                </article>
+                <!--------------------Project 3-------------------->
+                <article id="project-3">
+                    <img src="./styles/images/project-screenshots/local-library-project.png"
+                        alt="Local library screenshot" width="261" height="155">
+                    <h4>Local Library Application </h4>
+                    <p>The local library application displays general
+                        statistics about the local library program, such as total number of books, books currently
+                        borrowed, and most popular books. For this project I was tasked with creating the JavaScript
+                        functions that render the statistics onto the dashboard.</p>
+                    <a href="https://github.com/rimachaib/project-local-library" target="_blank"><img
+                            src="./styles/images/icons/view.svg" alt="link to github" width="20" height="20">
+                        <p id="view-paragraph">View</p>
+                    </a>
+                </article>
+            </div>
+            <!--horizontal rule-->
+            <hr id="horizontal-rule">
+        </section>
+
+        <!-- Contact Section-->
+        <section class="container" id="contact">
+            <!-- Contact Introduction-->
+            <div class="contact-introduction">
+                <h2>Contact</h2>
+                <p>I’m currently seeking a remote position as a front end engineer or customer success engineer. Please
+                    send me a message via email, the contact form, or LinkedIn if you feel I could be a good fit for an
+                    open role at your company </p>
+                <!--Contact Links-->
+                <!--This link will open in a default email window with my email pre-filled-->
+                <a href="mailto:rima.chaib@gmail.com"><img src="./styles/images/social/email.svg" alt="link to email"
+                        width="34" height="25"></a>
+                <a href="https://www.linkedin.com/in/rimachaib/" target="_blank"><img
+                        src="./styles/images/social/linkedin.svg" alt="link to linkedin" width="30" height="30"></a>
+                <a href="https://github.com/rimachaib" target="_blank"><img src="./styles/images/social/github.svg"
+                        alt="link to Github" width="30" height="30"></a>
+                <!--horizontal rule-->
+                <hr id="horizontal-rule">
+            </div>
+            <!--Contact Form-->
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mjvjbndr" method="POST" id="form">
+                    <label for="user-name">Name</label>
+                    <!--Setting type to "text" creates a single row field for text input-->
+                    <input id="user-name" type="text" name="name" maxlength="20" autofocus="on"
+                        placeholder="Full Name" />
+
+                    <label for="user-email">Email</label>
+                    <input id="user-email" type="text" name="email" maxlength="35" placeholder="Email" required />
+
+                    <label for="user-message">Message</label>
+                    <!--The required attribute added to an <input> element ensures-->
+                    <textarea id="user-message" type="text" name="message" maxlength="500"
+                        placeholder="I look forward to hearing from you!" required></textarea>
+                    <!--Setting type to "submit" creates a submit button-->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <article class="footer-content"> &#169 Rima Chaib 2021</article>
+        <p class="footer-content">Designed by Jeff Brydon built by Rima Chaib</p>
+    </footer>
+</body>
+
+</html>
