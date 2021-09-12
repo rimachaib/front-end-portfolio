@@ -27,6 +27,18 @@ footer.container {
 }
 
 /*-----Media Queries-----*/
+@media screen and (max-width: 370px) {
+ .language-icons {
+  position: relative;
+  top: 100px;
+  z-index: 0;
+ }
+
+ .memoji-images {
+  margin-left: 30px;
+  margin-top: -11px;
+ }
+}
 
 /*-----Screen width maximum 824px-----*/
 @media screen and (max-width: 824px) {
